@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function toggleProjectDetails(id) {
+            var details = document.getElementById(id);
+            details.style.display = details.style.display === "none" ? "block" : "none";
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="logo">Bhoomika K N</div>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+    </nav>
+    <br>
+    <section class="projects">
+       
+        <div class="project-item" onclick="toggleProjectDetails('project1')">
+            <h3>Secure Ledger: Blockchain Based Student Data Management</h3>
+            <div id="project1" class="project-details" style="display: none;">
+                <p>A secure student management system utilizing blockchain technology for authentication and verification.This project have role based access to people and admin is the one who add the details to blockchain.</p>
+                <img src="C:\Users\bhoom\OneDrive\Pictures\Screenshot 2024-12-14 143958.png" alt="Blockchain Project" width="300"  >
+                <img src="C:\Users\bhoom\OneDrive\Pictures\Screenshot 2025-02-24 231320.png" alt="Blockchain Project" width="300" height="250">
+            </div>
+        </div>
+        
+        <div class="project-item" onclick="toggleProjectDetails('project2')">
+            <h3>Hostel Management System</h3>
+            <div id="project2" class="project-details" style="display: none;">
+                <p>The main technology used in this project is DBMS, with five different tables connected with each other and operations done in this project are create, read, edit, delete.</p> </p>
+                <img src="C:\Users\bhoom\OneDrive\Pictures\Picture1.jpg" alt="Event Management" width="300" height="325">
+                <img src="C:\Users\bhoom\OneDrive\Pictures\Picture2.jpg" alt="Event Management" width="300">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
